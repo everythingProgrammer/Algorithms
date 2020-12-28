@@ -1,6 +1,6 @@
 package arrays;
 
-https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
+// https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
 
 public class KSmallest {
 
