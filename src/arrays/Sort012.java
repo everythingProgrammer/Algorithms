@@ -6,24 +6,24 @@ package arrays;
 public class Sort012 {
 	
 	
-	static void sort(int arr[]) {
+	static void sort(int nums[]) {
 		int low = 0;
 		int mid = 0;
-		int high = arr.length -1;
+		int high = nums.length -1;
 		
 		while(mid<=high) {
-			if(arr[mid] == 0) {
-				arr[mid ] = arr[low];
-			    arr[low] = 0;
+			if(nums[mid] == 0) {
+				nums[mid ] = nums[low];
+			    nums[low] = 0;
 			    mid++;
 			    low++;
 			}
-			else if( arr[mid] == 1) {
+			else if( nums[mid] == 1) {
 				mid++;
 			}
-			else if(arr[mid] == 2) {
-				arr[mid] = arr[high];
-				arr[high] = 2;
+			else if(nums[mid] == 2) {
+				nums[mid] = nums[high];
+				nums[high] = 2;
 				high --;
 			}
 		}
