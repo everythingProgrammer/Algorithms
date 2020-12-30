@@ -27,6 +27,20 @@ package arrays;
 public class FindDuplicate {
 	
 	
+	public static int findDuplicate2(int nums[]) {
+
+		
+		for(int i = 0 ; i<nums.length ; i++) {
+			
+			if(nums[ Math.abs(nums[i])]>0) {
+				nums[ Math.abs(nums[i]) ] = nums[Math.abs(nums[i])]*-1;
+			}
+			else 
+				return Math.abs(nums[i]);	
+		}
+		return 0;
+	}
+	
 	public int findDuplicate(int[] nums) {
         int tortoise = nums[0];
         int hare = nums[0];
@@ -49,6 +63,10 @@ public class FindDuplicate {
     }
 	
 	
-	
+
+	public static void main(String args[]) {
+		int nums[] = {1,2,3,3,4,5};
+	    System.out.println(findDuplicate2(nums));
+	}
 	
 }
