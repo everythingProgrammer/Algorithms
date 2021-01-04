@@ -23,7 +23,9 @@ public class BuyansSell2 {
 			profit = profit + (peak -valley);
 		}
 		
-		return 0;
+		return profit;
 	}
+
+	
 	
 }
