@@ -1,0 +1,15 @@
+An optimization problem can be solved using Greedy if the problem has the following property:
+ At every step, we can make a choice that looks best at the moment, and we get the optimal 
+ solution of the complete problem. 
+ 
+ 
+ Some Greedy Algorithms 
+ Kruskal's Minimum Spanning Tree .
+ Prim's Minimum Spanning Tree
+ Dijkstra's Shortest Path 
+ Huffman Coding 
+ 
+ 
+ 
+ 
+ Traveling Salesman Problem - NP Hard Problem. 
