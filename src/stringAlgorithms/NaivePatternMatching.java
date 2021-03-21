@@ -13,9 +13,10 @@ public class NaivePatternMatching {
 	private static void search(String text, String pat) {
 		int N = text.length();
 		int M = pat.length();
-		
+		// iterate over text
 		for(int i = 0 ; i<N-M; i++) {
 			int j ;
+			// iterate over pattern
 			for( j = 0; j<M; j++) {
 				if(pat.charAt(j)!= text.charAt(i+j)) {
 					break;
