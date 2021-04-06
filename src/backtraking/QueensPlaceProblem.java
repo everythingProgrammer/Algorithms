@@ -3,6 +3,9 @@ import java.util.*;
 public class QueensPlaceProblem {
 	
 	public static boolean isItSafeToPlace(boolean board[][], int row, int col) {
+		if(row>= board.length || col>= board[0].length) {
+			return false;
+		}
 		
 		// check in same row
 		for(int i = col ;i>= 0 ; i--) {
@@ -47,7 +50,7 @@ public class QueensPlaceProblem {
 					col = 0;
 				}
 				//negative base case 
-				if(row == board.length) {
+				if(row >= board.length) {
 					return ;
 				}
 		
@@ -55,7 +58,11 @@ public class QueensPlaceProblem {
 		//place only if it is safe
 		if(isItSafeToPlace(board, row, col)) {
 			board[row][col] = true;
+//			placeQueens(board, row+1, 0 , qpsf+1, tq,ans+" {"+row+"-"+col+"}");
 			placeQueens(board, row, col+1 , qpsf+1, tq,ans+" {"+row+"-"+col+"}");
+			// upper two lines are the same 
+			
+			
 			board[row][col] = false;
 		}
 		
@@ -67,7 +74,7 @@ public class QueensPlaceProblem {
 	}
 	
 	public static void main(String args[]) {
-		 placeQueens(new boolean[3][4],0,0,0,3,""); 
+		 placeQueens(new boolean[5][5],0,0,0,5,""); 
 	}
 	
 }
