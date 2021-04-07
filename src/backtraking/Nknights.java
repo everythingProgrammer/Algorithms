@@ -71,7 +71,7 @@ public class Nknights {
 	
 	public static void main(String args[]) {
 		placeKnightsCombinations(new boolean[3][3], 0,0,0,3,"");
-		System.out.println("********************************************");
+		System.out.println("***************************************************");
 		count = 0;
 		placeKnightsWithoutAttack(new boolean[3][3], 0,0,0,3,"");
 	}
