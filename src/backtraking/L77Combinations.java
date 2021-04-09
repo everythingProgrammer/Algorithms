@@ -12,7 +12,7 @@ public class L77Combinations {
 	public static void findCombination(int target, int curr , int psf, int k, ArrayList<Integer>ca, List<List<Integer>>ans) {
 		if(psf == k) {
 			ans.add(new ArrayList<>(ca));
-			System.out.println(ca);
+//			System.out.println(ca);
 			return;
 		}
 		
