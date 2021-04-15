@@ -1,6 +1,12 @@
 package backtraking;
 import java.util.*;
 public class L131 {
+	
+	
+	/*Solved from solution 
+	 * 
+	 * */
+	
 	public static List<List<String>> partition(String s) {
         List<List<String>> result = new ArrayList<List<String>>();
         dfs(0, result, new ArrayList<String>(), s);
