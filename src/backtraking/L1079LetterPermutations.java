@@ -1,7 +1,7 @@
 package backtraking;
 import java.util.*;
 
-/*not workings*/
+/*************************************not workings*****************************/
 
 public class L1079LetterPermutations {
 	public static int numTilePossibilities(String tiles) {
@@ -40,6 +40,6 @@ public class L1079LetterPermutations {
 	}
 	
 	public static void main(String args[]) {
-		numTilePossibilities("AAABBC");
+		numTilePossibilities("AAB");
 	}
 }
